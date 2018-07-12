@@ -1,3 +1,81 @@
+<?php
+	$https           = 'https://';
+	$https_HTTP_HOST = $https.$_SERVER["HTTP_HOST"].'/';
+	$REQUEST_URI     = $_SERVER['REQUEST_URI'];
+	$url             = $https_HTTP_HOST.$REQUEST_URI;
+
+if( preg_match("/^www\./", $_SERVER["HTTP_HOST"]) ) {
+    $https_HTTP_HOST = $https.preg_replace("/^www\./", "", $_SERVER["HTTP_HOST"]);
+		$url = $https_HTTP_HOST.$REQUEST_URI;
+    header("Location: $url", true, 301);
+    exit;
+}
+if( preg_match("/index\.php|index\.html/", $_SERVER['REQUEST_URI']) ) {
+	 $REQUEST_URI = preg_replace("/index\.php|index\.html/", "", $_SERVER["REQUEST_URI"]);
+	 $url = $https_HTTP_HOST.$REQUEST_URI;
+    header("Location: $url", true, 301);
+    exit;
+}
+// ルート
+if( preg_match("/^\/$/", $_SERVER['REQUEST_URI']) ) {
+
+}
+	// ルート以外
+	else if( preg_match("/\/\//", $_SERVER['REQUEST_URI']) ) {
+		 $REQUEST_URI = preg_replace("/\//", "", $REQUEST_URI);
+		 $REQUEST_URI = $REQUEST_URI;
+		 $url = $https_HTTP_HOST.$REQUEST_URI;
+	    header("Location: $url", true, 301);
+	    exit;
+	}
+if($_SERVER['HTTPS'] == null) {
+	$https           = 'https://';
+	$https_HTTP_HOST = $https.$_SERVER["HTTP_HOST"];
+	$REQUEST_URI     = $_SERVER['REQUEST_URI'];
+	$url             = $https_HTTP_HOST.$REQUEST_URI;
+	header("Location: $url", true, 301);
+	exit;
+}
+
+
+
+
+
+
+/*
+if( preg_match("/^www\./", $_SERVER["HTTP_HOST"]) ) {
+    $url = (empty($_SERVER["HTTPS"]) ? "http://" : "https://") . preg_replace("/^www\./", "", $_SERVER["HTTP_HOST"]) . $_SERVER["REQUEST_URI"];
+    header("Location: $url", true, 301);
+    exit;
+}
+// indexでアクセスが来た場合リダイレクトする
+if( preg_match("/\/index\.php\/|\/index\.html\//", $_SERVER['REQUEST_URI']) ) {
+    $url = (empty($_SERVER["HTTPS"]) ? "http://" : "https://") . $_SERVER["HTTP_HOST"] . preg_replace("/\/index\.php\/|\/index\.html\//", "", $_SERVER["REQUEST_URI"]);
+    header("Location: $url", true, 301);
+    exit;
+}
+// 最期に/が無い場合に付け足してリダイレクト（なお、ファイルを使う場合は改修が必要）
+if(! preg_match("/\/$/", $_SERVER['REQUEST_URI']) ) {
+    $url = (empty($_SERVER["HTTPS"]) ? "http://" : "https://") . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"].'/';
+//		var_dump($url);
+//    header("Location: $url", true, 301);
+//    exit;
+}
+// 
+if(preg_match("/\/$/", $_SERVER['REQUEST_URI']) ) {
+    $url = (empty($_SERVER["HTTPS"]) ? "http://" : "https://") . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"].'/';
+//		var_dump($url);
+//    header("Location: $url", true, 301);
+//    exit;
+}
+
+*/
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
