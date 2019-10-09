@@ -1,0 +1,12 @@
+	
+	<!-- header -->
+	<header class="header" class="clearfix">
+		<div class="header_inner clearfix">
+		<!-- logo -->
+		<div class="logo">
+			<h1>
+				<a href="https://spacenavi.jp/"><img width="114" height="56" title="スペースナビ" alt="スペースナビ" src="<?php echo HTTP; ?>assets/img/logo/logo_1.png"></a>
+			</h1>
+		</div> <!-- logo -->
+		<?php require_once(PATH.'view/basic/drawer.php'); /* drawer読み込み*/ ?>
+	</header>
