@@ -10,7 +10,10 @@ ini_set('display_errors', 1);
 // 開発
 error_reporting(E_ALL & ~E_NOTICE);
 
-
+/***************
+タイムゾーン指定
+***************/
+date_default_timezone_set('Asia/Tokyo');
 /*******
 独自関数
 *******/

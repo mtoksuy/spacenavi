@@ -159,7 +159,7 @@ section_block
 section_block_box_left
 *********************/
 .section_block_box_left {
-	margin: 0 0 0 5%;
+	margin: 0 0 30px 5%;
 	display: flex;
 }
 
@@ -337,12 +337,27 @@ section_block_box_right
 	right: 35px;
 	float: right;
 	background-color: #3E91FF;
-	padding:10px 20px;
 	color: #fff;
 	cursor: pointer;
 	border-radius: 2px;
 	font-size: 20px;
 }
+.contact_prompt .contact_prompt_inner .contact_prompt_button a {
+	color: #fff;
+	display: block;
+	padding: 10px 20px;
+}
+.contact_prompt .contact_prompt_inner .contact_prompt_button a:visited {
+	color: #fff;
+}
+
+
+
+
+
+
+
+
 
 /*****
 footer
@@ -396,53 +411,38 @@ footer
 1028px以下の設定
 **************/
 @media screen and (min-width: 0px) and (max-width: 1028px) {
-
-
-
-
-
-
-/*******
-ヘッダー
-*******/
-.header {
-	position:fixed;
-	top:0;
-	background-color: #fcfcfc;
-	width:100%;
-	z-index:11;
-}
-.header .header_inner {
-	width:100%;
-}
-.header .header_inner .logo {
-
-}
-.header .header_inner .logo h1 {
-	margin: 5px 0 5px 5px;
-}
-.header .header_inner .logo a {
-
-}
-.header .header_inner .logo a img {
-	width: 94px;
-	height: auto;
-}
-/*****
-drawer
-*****/
-.drawer {
-display: none;
-}
-
-
-
-
-
-
-
-
-
+	/*******
+	ヘッダー
+	*******/
+	.header {
+		position:fixed;
+		top:0;
+		background-color: #fcfcfc;
+		width:100%;
+		z-index:11;
+	}
+	.header .header_inner {
+		width:100%;
+	}
+	.header .header_inner .logo {
+	
+	}
+	.header .header_inner .logo h1 {
+		margin: 5px 0 5px 5px;
+	}
+	.header .header_inner .logo a {
+	
+	}
+	.header .header_inner .logo a img {
+		width: 94px;
+		height: auto;
+	}
+	/*****
+	drawer
+	*****/
+	.drawer {
+	display: none;
+	}
 	.top_gallery .top_gallery_inner .top_gallery_inner_left {
 	 width: auto;
 	}
@@ -450,6 +450,26 @@ display: none;
 
 
 
+.contact_prompt {
+	padding: 30px 0;
+}
+	.contact_prompt .contact_prompt_inner p {
+		float: none;
+		margin: 0 0 5px 0;
+		font-size: 20px;
+		line-height: 175%;
+	}
+	.contact_prompt .contact_prompt_inner .contact_prompt_button {
+		right: 0;
+		float: none;
+		text-align: center;
+		font-size: 20px;
+	}
+
+
+
+
+}
 
 
 
@@ -466,97 +486,163 @@ display: none;
 
 
 
+/**************
+640px以下の設定
+**************/
+@media screen and (min-width: 0px) and (max-width: 640px) {
+	/**********
+	top_gallery
+	**********/
+	.top_gallery {
+		width: 100%;
+		margin: 100px auto 0px;
+	}
+	.top_gallery .top_gallery_inner {
+		margin: 0 5px;
+	}
+	.top_gallery_back img {
+		position: relative;
+		top: -50px;
+		right: -123px;
+		width: 100%;
+		height: auto;
+	}
+	/**********
+	
+	**********/
+	.main .main_inner {
+		margin: 0 5px;
+	}
+	/**********
+	
+	**********/
+	.section_block .section_title {
+		font-size: 38px;
+	}
+	.section_block_box_right {
+		display: block;
+		margin: -35px 0 0 0;
+		padding: 0;
+	}
+	.section_block_box_right .section_block_box_right_left_content {
+	display: none;
+	}
+	.section_block_box_right .section_block_box_right_right_content {
+		width: 100%;
+	}
+	.section_block_box_right .section_block_box_right_right_content .section_block_box_title {
+		text-align: center;
+		font-size: 28px;
+	}
+	.section_block_box_right .section_block_box_right_right_content .section_block_box_bottom {
+		font-size: 16px;
+		line-height: 175%;
+	}
+	/**********
+	
+	**********/
+	.problem_solving {
+		width: 100%;
+		margin: 30px auto 0;
+	}
+	.problem_solving ul li {
+		padding: 5px;
+		flex-basis: 50%;
+	}
+	.problem_solving ul li p {
+		text-align: initial;
+	}
+	.problem_solving ul li .problem_solving_li_inner {
+		padding: 15px;
+	}
+	.problem_solving h3 {
+		font-size: 24px;
+	}
+	.problem_solving ul li h4 {
+		font-size: 18px;
+		margin: 0 0 15px 0;
+		line-height: 145%;
+	}
+	/*************
+	contact_prompt
+	*************/
+	.contact_prompt {
+		padding: 15px 0;
+	}
+	.contact_prompt .contact_prompt_inner p {
+		float: none;
+		margin: 0 0 5px 0;
+		font-size: 18px;
+		line-height: 175%;
+	}
+	.contact_prompt .contact_prompt_inner .contact_prompt_button {
+		right: 0;
+		float: none;
+		text-align: center;
+		font-size: 18px;
+	}
+	/****
+	
+	****/
+	.section_block_box_left {
+		margin: 0;
+		display: block;
+	}
+	.section_block_box_left .section_block_box_left_left_content {
+		width: 100%;
+	}
+	.section_block_box_left .section_block_box_left_right_content {
+		display: none;
+	}
+	.section_block_box_left .section_block_box_left_left_content .section_block_box_title {
+		text-align: center;
+		font-size: 28px;
+	}
+	.footer .footer_inner {
+		padding: 40px 0 20px 0;
+	}
+}
+/**************
+480px以下の設定
+**************/
+@media screen and (min-width: 0px) and (max-width: 480px) {
+	/****
+	
+	****/
+	.top_gallery {
+		height: auto;
+	}
+	.top_gallery .top_gallery_inner {
 
-
-
+	}
+	.top_gallery_back img {
+		top: -52px;
+		right: -123px;
+		width: 100%;
+		height: auto;
+	}
 
 
 
 }
 /**************
-640px以下の設定
+320px以下の設定
 **************/
-@media screen and (min-width: 0px) and (max-width: 640px) {
+@media screen and (min-width: 0px) and (max-width: 320px) {
 	.top_gallery {
-		width: 100%;
+		height: auto;
 	}
-.top_gallery .top_gallery_inner {
-	margin: 0 5px;
-}
-.main .main_inner {
-	margin: 0 5px;
-}
+	.top_gallery .top_gallery_inner {
 
-
-.section_block_box_right {
-	display: block;
-	margin: -35px 0 0 0;
-	padding: 0;
-}
-.section_block_box_right .section_block_box_right_left_content {
-display: none;
-}
-.section_block_box_right .section_block_box_right_right_content {
-	width: 100%;
-}
-.section_block_box_right .section_block_box_right_right_content .section_block_box_title {
-	text-align: center;
+	}
+	.top_gallery_back img {
+		top: -50px;
+		right: -123px;
+		width: 100%;
+		height: auto;
+	}
 }
 
-.section_block_box_right .section_block_box_right_right_content .section_block_box_bottom {
-	font-size: 16px;
-}
-
-.problem_solving {
-	width: 100%;
-	margin: 30px auto 0;
-}
-.problem_solving ul li {
-	padding: 5px;
-	flex-basis: 50%;
-}
-
-.problem_solving ul li .problem_solving_li_inner {
-	padding: 15px;
-}
-
-.contact_prompt .contact_prompt_inner p {
-	float: none;
-	margin: 0 0 5px 0;
-}
-.contact_prompt .contact_prompt_inner .contact_prompt_button {
-	right: 0;
-	float: none;
-	text-align: center;
-}
-
-
-
-.section_block_box_left {
-	margin: 0;
-	display: block;
-}
-.section_block_box_left .section_block_box_left_left_content {
-	width: 100%;
-}
-.section_block_box_left .section_block_box_left_right_content {
-	display: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
 
 
 

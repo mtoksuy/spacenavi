@@ -65,7 +65,7 @@
 							<div class="contact_prompt_inner clearfix">
 								<p>イメージしているWebサービスを作りませんか？</p>
 								<div class="contact_prompt_button">
-									お問い合わせはこちら
+									<a href="<?php echo HTTP; ?>contact/">お問い合わせはこちら</a>
 								</div>
 							</div>
 						</div> <!-- contact_prompt -->
@@ -143,7 +143,7 @@
 							<div class="contact_prompt_inner clearfix">
 								<p>Web高速化を行いビジネスをブーストしませんか？</p>
 								<div class="contact_prompt_button">
-									お問い合わせはこちら
+									<a href="<?php echo HTTP; ?>contact/">お問い合わせはこちら</a>
 								</div>
 							</div>
 						</div> <!-- contact_prompt -->
