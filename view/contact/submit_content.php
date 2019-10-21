@@ -6,7 +6,7 @@
 							<h2 class="contact_title">送信完了</h2>
 							<p>お問い合わせありがとうございました。送り頂いたお問い合わせ内容は確認次第返信させていただきますのでお待ちくださいますようよろしくお願い致します。</p>
 
-<p><a href="http://localhost/spacenavi/">トップページへ戻る</a></p>
+<p><a href="<?php echo HTTP; ?>">トップページへ戻る</a></p>
 
 
 

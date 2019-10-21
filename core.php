@@ -84,7 +84,22 @@ DBコンフィグ
 /*********
 モデルgzip
 *********/
-require_once(PATH.'classes/model/gzip/basis.php');
-require_once(PATH.'classes/model/gzip/html.php');
-$model_gzip_basis = new model_gzip_basis();
-$model_gzip_html = new model_gzip_html();
+//require_once(PATH.'classes/model/gzip/basis.php');
+//require_once(PATH.'classes/model/gzip/html.php');
+//$model_gzip_basis = new model_gzip_basis();
+//$model_gzip_html = new model_gzip_html();
+
+/*********
+モデルmail
+*********/
+require_once(PATH.'classes/model/mail/basis.php');
+$model_mail_basis = new model_mail_basis();
+/*************
+モデルsecurity
+*************/
+require_once(PATH.'classes/library/security/basis.php');
+$library_security_basis = new library_security_basis();
+
+
+
+
