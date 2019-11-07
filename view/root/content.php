@@ -1,6 +1,6 @@
 
 					<!-- section_block -->
-					<div class="section_block">
+					<div id="service" style="padding-top: 50px; margin-top: -50px;" class="section_block">
 						<p class="section_title_top">Service</p>
 						<h2 class="section_title">2つのサービス</h2>
 						<p class="section_title_bottom">最速でサービスを開発する事でPDCAを回しビジネス着手する一歩を。</p>
@@ -8,7 +8,7 @@
 						<!-- section_block_box_right -->
 						<div class="section_block_box_right">
 							<div class="section_block_box_right_left_content">
-								<img class="appeal_block_image_4" width="640" height="400" src="http://sharetube.jp/assets/img/curatorrecruitment/lp/macbook_pro_mockup_sharetube_1.png" title="SharetubeをPCで見た場合のイメージ図" alt="SharetubeをPCで見た場合のイメージ図">
+								<img class="appeal_block_image_4" width="640" height="400" src="<?php echo HTTP; ?>assets/img/common/macbook_pro_mockup_sharetube_1.png" title="SharetubeをPCで見た場合のイメージ図" alt="SharetubeをPCで見た場合のイメージ図">
 							</div>
 							<div class="section_block_box_right_right_content">
 								<h2 class="section_block_box_title">Webサービス開発</h2>
@@ -91,7 +91,7 @@
 								<p class="section_block_box_bottom">私たちは見つけました。webページが高速であればあるほどビジネスが成功する事を。限界まで高速化する技術でビジネスにブーストを。</p>
 							</div>
 							<div class="section_block_box_left_right_content">
-								<img class="appeal_block_image_4" width="640" height="400" src="http://sharetube.jp/assets/img/curatorrecruitment/lp/macbook_pro_mockup_sharetube_1.png" title="SharetubeをPCで見た場合のイメージ図" alt="SharetubeをPCで見た場合のイメージ図">
+								<img class="appeal_block_image_4" width="640" height="400" src="<?php echo HTTP; ?>assets/img/common/macbook_pro_mockup_sharetube_1.png" title="SharetubeをPCで見た場合のイメージ図" alt="SharetubeをPCで見た場合のイメージ図">
 							</div>
 						</div> <!-- section_block_box_left -->
 						<!-- problem_solving -->

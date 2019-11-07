@@ -10,7 +10,7 @@
 					</li>
 -->
 					<li>
-						<a class="o_8" href="<?php echo HTTP;?>/services">Services</a> <!-- この会社ができることを紹介する -->
+						<a class="o_8" href="#service">Services</a> <!-- この会社ができることを紹介する -->
 					</li>
 <!--
 					<li>

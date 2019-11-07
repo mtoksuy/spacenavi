@@ -46,6 +46,8 @@ if(preg_match('/localhost/',$_SERVER["HTTP_HOST"])) {
 		define('META_DESCRIPTION', 'スペースナビ株式会社の公式ホームページ。サービス設計・作成、サーバー作成、メディア運営、マイニング、マイニングリグ販売を手がける株式会社です。');
 		define('TWITTER_ID', '');
 	}
+
+//var_dump(HTTP);
 /**********
 
 **********/
@@ -84,10 +86,10 @@ DBコンフィグ
 /*********
 モデルgzip
 *********/
-//require_once(PATH.'classes/model/gzip/basis.php');
-//require_once(PATH.'classes/model/gzip/html.php');
-//$model_gzip_basis = new model_gzip_basis();
-//$model_gzip_html = new model_gzip_html();
+require_once(PATH.'classes/model/gzip/basis.php');
+require_once(PATH.'classes/model/gzip/html.php');
+$model_gzip_basis = new model_gzip_basis();
+$model_gzip_html = new model_gzip_html();
 
 /*********
 モデルmail

@@ -12,5 +12,5 @@
 
 
 		<div class="top_gallery_back">
-			<img src="<?php echo HTTP;?>assets/img/common/top_grallery_back_1.png">
+			<img src="<?php echo HTTP;?>assets/img/common/top_grallery_back_3.png">
 		</div>
