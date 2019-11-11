@@ -1,5 +1,59 @@
-<?php
+<?php 
 class model_gzip_html {
+	//-----------
+	//圧縮CSS作成
+	//-----------
+	public static function css_compression_create() {
+		$core_css   = file_get_contents(PATH.'assets/css/core.css');
+		$common_css = file_get_contents(PATH.'assets/css/common/common.css');
+		$css = $core_css.$common_css;
+/*
+		// 開発環境のみ最新css読み込み
+		if(preg_match('/localhost/',$_SERVER["HTTP_HOST"])) {
+			$development_css = '
+			  <link rel="stylesheet" href="'.HTTP.'assets/css/core.css?'.date('Y-m-d-H-i-s').'" type="text/css">
+			  <link rel="stylesheet" href="'.HTTP.'assets/css/common/common.css?'.date('Y-m-d-H-i-s').'" type="text/css">';
+		}
+*/
+		// css圧縮
+		$css = preg_replace('!/\*[^*]*\*+([^/][^*]*\*+)*/!', '', $css);
+		// コロンの後の空白を削除する
+		$css = str_replace(': ', ':', $css); 
+		// タブ、スペース、改行などを削除する
+		$css = str_replace( array("\r\n", "\r", "\n", "\t", '  ', '    ', '    '), '', $css);
+		return $css;
+	}
+	//-------
+	//
+	//--------
+	public static function html_compression($html) {
+		// 圧縮CSS作成
+		$css = model_gzip_html::css_compression_create();
+		// css削除
+		$pattern = '/<link rel="stylesheet" href="(.*)" type="text\/css">/';
+		preg_match_all($pattern, $html, $array);
+		foreach($array[0] as $key => $value) {
+			$value = preg_replace('/\//', '\/', $value);
+			$pattern_key = '/'.$value.'/';
+			$html = preg_replace($pattern_key, '', $html);
+		}
+		// 圧縮css追加
+		$pattern = '/<!-- css -->/';
+		$html = preg_replace($pattern, '<style>'.$css.'</style>', $html);
+		// HTML圧縮
+		$search = array(
+			'/\>[^\S ]+/s',  // strip whitespaces after tags, except space
+			'/[^\S ]+\</s',  // strip whitespaces before tags, except space
+			'/(\s)+/s'       // shorten multiple whitespace sequences
+		);
+		$replace = array(
+			'>',
+			'<',
+			'\\1'
+		);
+		$html = preg_replace($search, $replace, $html);
+		return $html;
+	}
 	//------------------------
 	//gzipファイルの中身を生成
 	//-------------------------

@@ -1,3 +1,6 @@
+# ファイルの優先順位
+DirectoryIndex index.htm index.html index.cgi index.php
+
 # RewriteEngineをOnにする
 Options +FollowSymLinks
 
