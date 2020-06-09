@@ -1,5 +1,5 @@
 # ファイルの優先順位
-DirectoryIndex index.htm index.html index.cgi index.php
+DirectoryIndex index.html.gz index.html index.php
 
 # RewriteEngineをOnにする
 Options +FollowSymLinks

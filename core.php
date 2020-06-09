@@ -32,8 +32,8 @@ if(preg_match('/localhost/',$_SERVER["HTTP_HOST"])) {
 	define('HTTP', 'http://localhost/spacenavi/');
 	define('PATH', dirname(__FILE__).'/');
 	define('TITLE', 'スペースナビ株式会社');
-	define('META_KEYWORDS', 'Spacenavi,スペースナビ,営業進捗サービス,マイニング,マイニングリグ');
-	define('META_DESCRIPTION', 'スペースナビ株式会社の公式ホームページ。サービス設計・作成、サーバー作成、メディア運営、マイニング、マイニングリグ販売を手がける株式会社です。');
+	define('META_KEYWORDS', 'Spacenavi,スペースナビ,webサービス,SEO,マイニング,マイニングリグ');
+	define('META_DESCRIPTION', 'スペースナビ株式会社の公式ホームページ。webサービス設計・作成、サーバー作成、SEO、メディア運営、マイニング、マイニングリグ販売を手がける株式会社です。');
 	define('TWITTER_ID', '');
 }
 	// 本番環境
@@ -42,15 +42,15 @@ if(preg_match('/localhost/',$_SERVER["HTTP_HOST"])) {
 		define('HTTP', 'https://'.$_SERVER["HTTP_HOST"].'/');
 		define('PATH', $_SERVER["DOCUMENT_ROOT"].'/');
 		define('TITLE', 'スペースナビ株式会社');
-		define('META_KEYWORDS', 'Spacenavi,スペースナビ,営業進捗サービス,マイニング,マイニングリグ');
-		define('META_DESCRIPTION', 'スペースナビ株式会社の公式ホームページ。サービス設計・作成、サーバー作成、メディア運営、マイニング、マイニングリグ販売を手がける株式会社です。');
+		define('META_KEYWORDS', 'Spacenavi,スペースナビ,webサービス,SEO,マイニング,マイニングリグ');
+		define('META_DESCRIPTION', 'スペースナビ株式会社の公式ホームページ。webサービス設計・作成、サーバー作成、SEO、メディア運営、マイニング、マイニングリグ販売を手がける株式会社です。');
 		define('TWITTER_ID', '');
 	}
 
 //var_dump(HTTP);
-/**********
-
-**********/
+/********************
+セッションスタート
+********************/
 session_start();
 /***********
 DBコンフィグ
@@ -101,7 +101,4 @@ $model_mail_basis = new model_mail_basis();
 *************/
 require_once(PATH.'classes/library/security/basis.php');
 $library_security_basis = new library_security_basis();
-
-
-
 

@@ -11,6 +11,15 @@
 						<p>スペースナビはWebサービス開発・Web高速化に特化したプロフェッショナルチームです。</p>
 					</div>
 				</div> <!-- footer_inner -->
+
+					<!-- footer_box_bottom -->
+					<div class="footer_box_bottom">
+						<ul>
+							<li class="item"><a href="<?php echo HTTP; ?>aboutus/">企業情報</a></li>
+							<li class="item"><a href="<?php echo HTTP; ?>/sitemap/">サイトマップ</a></li>
+						</ul>
+					</div> <!-- footer_box_bottom -->
+
 				<!-- footer_bottom -->
 				<div class="footer_bottom">
 					<div class="footer_bottom_inner">
