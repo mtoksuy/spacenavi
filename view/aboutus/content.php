@@ -40,8 +40,8 @@
 						<p style="margin: 0px;">Sharetube - シェアしたくなるコンテンツが集まる、集まる。</p>
 						<p style="margin: 0 0 15px;"><a href="http://sharetube.jp/">http://sharetube.jp/</a></p>
 
-						<p style="margin: 0px;">UXSEO 究極のスピード改善を施し検索1位へ</p>
-						<p style="margin: 0 0 15px;"><a href="https://spacenavi.jp/">https://spacenavi.jp/</a></p>
+						<p style="margin: 0px;">UXSEO [1億PVから研究した2020年最新のSEO決定版サービス]</p>
+						<p style="margin: 0 0 15px;"><a href="https://uxseo.jp/">https://uxseo.jp/</a></p>
 					</div>
 
 					<div class="section_block">

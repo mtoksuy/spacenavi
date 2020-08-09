@@ -40,7 +40,7 @@ if(preg_match('/localhost/',$_SERVER["HTTP_HOST"])) {
 	else {
 		// デフォルト変数生成
 		define('HTTP', 'https://'.$_SERVER["HTTP_HOST"].'/');
-		define('PATH', $_SERVER["DOCUMENT_ROOT"].'/');
+		define('PATH', $_SERVER["DOCUMENT_ROOT"]);
 		define('TITLE', 'スペースナビ株式会社');
 		define('META_KEYWORDS', 'Spacenavi,スペースナビ,webサービス,SEO,マイニング,マイニングリグ');
 		define('META_DESCRIPTION', 'スペースナビ株式会社の公式ホームページ。webサービス設計・作成、サーバー作成、SEO、メディア運営、マイニング、マイニングリグ販売を手がける株式会社です。');

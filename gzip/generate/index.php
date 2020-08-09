@@ -51,6 +51,7 @@ require_once('../../core.php');
 				else {
 					// 絶対パス
 					$directory_path = PATH.$value.'/';
+pre_var_dump($directory_path.'index.html');
 					unlink($directory_path.'index.html');
 					unlink($directory_path.'index.html.gz');
 					// html抽出

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<?php require_once(PATH.'view/basic/head.php'); /* head読み込み*/ ?>
+	<?php require_once(PATH.'view/root/head.php'); /* head読み込み*/ ?>
 	<body>
 		<!-- wrapper -->
 		<div class="wrapper">
