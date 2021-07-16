@@ -4,7 +4,9 @@
 				<!-- footer_inner -->
 				<div class="footer_inner clearfix">
 					<div class="footer_box">
-							<img width="114" height="56" src="<?php echo HTTP; ?>assets/img/logo/logo_1.png">
+							<img width="128" height="56" src="<?php echo HTTP; ?>assets/img/logo/logo_2.png">
+
+
 					</div>
 					<div class="footer_box">
 						<h4>ABOUT AS</h4>

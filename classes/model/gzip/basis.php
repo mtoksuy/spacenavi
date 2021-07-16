@@ -50,6 +50,8 @@ class model_gzip_basis {
 				else {
 					$css = file_get_contents($http.$value_array[2]);
 				}
+			$css = preg_replace('/
+|	/', '', $css);
 			$search = $gzip_article_html_array[0][$key];
 			$replace = '<style>'.$css.'</style>';
 			$search = preg_replace('/\?/', '\?', $search);

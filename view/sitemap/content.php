@@ -18,6 +18,9 @@
 					<a href="<?php echo HTTP;?>aboutus/">企業情報</a>
 				</div>
 				<div>
+					<a href="<?php echo HTTP;?>neta/EXPO2025_css_logo.html">2025年大阪・関西万博のロゴ - CSS</a>
+				</div>
+				<div>
 					<a href="<?php echo HTTP;?>sitemap/">サイトマップ</a>
 				</div>
 			</div>

@@ -52,7 +52,7 @@ function removeDir($dir) {
 // CSSインライン化
 //-------------------
 function css_inline($http, $gzip_article_html) {
-	$search = '/<link(.*?)rel=(("|\')stylesheet("|\'))(.*?)>/';
+	$search = '/<link(.*)rel=(("|\')stylesheet("|\'))(.*)>/';
 	preg_match_all($search, $gzip_article_html, $gzip_article_html_array);
 	foreach($gzip_article_html_array[0] as $key => $value) {
 		$search = '/href=("|\')(.*?)("|\')/';
@@ -166,13 +166,3 @@ $directory_decode_array = array();
 	}
 	return $directory_decode_array;
 }
-
-
-
-
-
-
-
-
-
-

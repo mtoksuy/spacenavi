@@ -6,26 +6,20 @@
 					<p>スペースナビ株式会社の公式ホームページ。webサービス設計・作成、サーバー作成、SEO、メディア運営、マイニング、マイニングリグ販売を手がける株式会社です。</p>
 
 					<div class="section_block">
-<!--
-						<h2>ビジョン・ミッション・バリュー</h2>
-						<h3>ビジョン</h3>
+
+						<h2>ビジョン</h2>
 						<p style="font-size: 20px;">人類と宇宙を結び世界を良い方向へ変えていく</p>
+
+
+
 						<h3>ミッション</h3>
-						<p style="font-size: 18px;">宇宙の案内人となる</p>
-						<p style="margin: 0 0 30px 0;">「宇宙旅行」が当たり前の時代になるように環境を整える</p>
-						<p style="font-size: 18px;">宇宙デブリをなくす</p>
-						<p style="margin: 0 0 30px 0;">安心安全の場所になるように地球をメインにデブリをなくしていく</p>
-						<p style="font-size: 18px;">宇宙で暮らせるよう注力する</p>
-						<p style="margin: 0 0 30px 0;">星以外にもコロニーなどの人が快適に暮らせる場所を提供していく</p>
-						<p style="font-size: 18px;">エネルギーを生み出す</p>
-						<p style="margin: 0 0 30px 0;">快適に暮らす必要なエネルギーの創出に取り組む</p>
--->
+						<p>・宇宙デブリをなくす<br>
+						・最新技術でエネルギー・食料問題を解決する<br>
+						・宇宙で観光業を発展させる<br></p>
 
 						<h3>バリュー</h3>
-						<p>Spacenaviがミッションを遂行してビジョンを達成するために守るべき項目です。</p>
-
-						<p>・良き世界を目指して<br>
-						・ポジティブこそ前向きのエネルギー<br>
+						<p>・良き世界を信じる<br>
+						・ポジティブこそプラスのエネルギー<br>
 						・失敗は成功への糧<br>
 						・全ての人にチャンスを<br>
 						・常識を疑い捨てる<br>
@@ -37,11 +31,18 @@
 
 					<div class="section_block">
 						<h2>運営サービス一覧</h2>
-						<p style="margin: 0px;">Sharetube - シェアしたくなるコンテンツが集まる、集まる。</p>
-						<p style="margin: 0 0 15px;"><a href="http://sharetube.jp/">http://sharetube.jp/</a></p>
+
+						<p style="margin: 0px;">ResizeCDN - 画像特化型CDN</p>
+						<p style="margin: 0 0 15px;"><a href="https://resizecdn.com/">https://resizecdn.com/</a></p>
 
 						<p style="margin: 0px;">UXSEO [1億PVから研究した2020年最新のSEO決定版サービス]</p>
 						<p style="margin: 0 0 15px;"><a href="https://uxseo.jp/">https://uxseo.jp/</a></p>
+
+
+						<p style="margin: 0px;">Sharetube - シェアしたくなるコンテンツが集まる、集まる。</p>
+						<p style="margin: 0 0 15px;"><a href="http://sharetube.jp/">http://sharetube.jp/</a></p>
+
+
 					</div>
 
 					<div class="section_block">
