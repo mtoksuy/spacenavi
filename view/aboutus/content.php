@@ -3,7 +3,7 @@
 	<div class="aboutus_inner">
 		<p class="aboutus_title_top">Aboutus</p>
 		<div class="aboutus_contents">
-					<p>スペースナビ株式会社の公式ホームページ。webサービス設計・作成、サーバー作成、SEO、メディア運営、マイニング、マイニングリグ販売を手がける株式会社です。</p>
+					<p>スペースナビ株式会社の公式ホームページ。webサービス運営、webサービス設計・作成、サーバー作成、SEO、メディア運営、マイニング、マイニングリグ販売を手がける株式会社です。</p>
 
 					<div class="section_block">
 
@@ -32,16 +32,13 @@
 					<div class="section_block">
 						<h2>運営サービス一覧</h2>
 
-						<p style="margin: 0px;">ResizeCDN - 画像特化型CDN</p>
-						<p style="margin: 0 0 15px;"><a href="https://resizecdn.com/">https://resizecdn.com/</a></p>
+						<p style="margin: 0 0 15px;"><a href="https://amatem.jp/">あまてむ - 最高に良いアイテムをあなたの元へ</a></p>
 
-						<p style="margin: 0px;">UXSEO [1億PVから研究した2020年最新のSEO決定版サービス]</p>
-						<p style="margin: 0 0 15px;"><a href="https://uxseo.jp/">https://uxseo.jp/</a></p>
+						<p style="margin: 0 0 15px;"><a href="https://resizecdn.com/">ResizeCDN - 画像特化型CDN</a></p>
 
+						<p style="margin: 0 0 15px;"><a href="https://uxseo.jp/">UXSEO [1億PVから研究した2020年最新のSEO決定版サービス]</a></p>
 
-						<p style="margin: 0px;">Sharetube - シェアしたくなるコンテンツが集まる、集まる。</p>
-						<p style="margin: 0 0 15px;"><a href="http://sharetube.jp/">http://sharetube.jp/</a></p>
-
+						<p style="margin: 0 0 15px;"><a href="http://sharetube.jp/">Sharetube - シェアしたくなるコンテンツが集まる、集まる。</a></p>
 
 					</div>
 
